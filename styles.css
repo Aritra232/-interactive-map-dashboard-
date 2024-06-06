@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#map {
+    height: 100%;
+    width: 75%;
+    float: right;
+}
+
+#details {
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+    }
+    #map {
+        width: 100%;
+    }
+}
